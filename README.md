@@ -1,2 +1,2 @@
 # FrontEnd
-HTML + JSS (fetchApi) + CSS com Bootstrap para requisições
+HTML+ CSS (Bootstrap) + JSS (fetchApi para requisições)
