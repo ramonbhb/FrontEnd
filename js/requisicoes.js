@@ -5,7 +5,7 @@ window.onload = function(e) {
 	.then(data => { 
 		console.log(data);
 		data.forEach(pessoa => {  
-			var table = document.getElementById("tabledados");
+			var table = document.getElementById("tabeladedados");
 			var row = table.insertRow(-1);
 			var idColuna = row.insertCell(0);
 			var nomeColuna = row.insertCell(1); 
