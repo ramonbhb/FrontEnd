@@ -4,7 +4,7 @@ window.onload = function(e) {
 		}).then(response => response.json())				
 	.then(data => { 
 		console.log(data);
-		data.forEach(el => {  
+		data.forEach(pessoa => {  
 			var table = document.getElementById("tabledados");
 			var row = table.insertRow(-1);
 			var idColuna = row.insertCell(0);
@@ -13,12 +13,12 @@ window.onload = function(e) {
 			var alturaColuna = row.insertCell(3); 
 			var pesoColuna = row.insertCell(4); 
 			var sexoColuna = row.insertCell(5); 
-			idColuna.innerHTML = el.id;
-			nomeColuna.innerHTML = el.nome;
-			idadeColuna.innerHTML = el.idade;
-			alturaColuna.innerHTML = el.altura;
-			pesoColuna.innerHTML = el.peso;
-			sexoColuna.innerHTML = el.sexo;
+			idColuna.innerHTML = pessoa.id;
+			nomeColuna.innerHTML = pessoa.nome;
+			idadeColuna.innerHTML = pessoa.idade;
+			alturaColuna.innerHTML = pessoa.altura;
+			pesoColuna.innerHTML = pessoa.peso;
+			sexoColuna.innerHTML = pessoa.sexo;
 		})
 	}).catch(error => console.error(error))
 }
